@@ -1,0 +1,59 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# nasaR
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of nasaR is to provide useful functions to help access NASA data easily.
+
+## Installation
+
+1. You can install the released version of nasaR from [nasaR](https://github.com/Liu-Zhichao/nasaR) with:
+
+``` r
+devtools::install_github("Liu-Zhichao/nasaR")
+```
+
+2. You can get your own NASA API token at: [NASA_API_TOKEN](https://api.nasa.gov/).
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(nasaR)
+## Download an high-definition astronomy picture of 2019/11/01 and return its explanation text as well.
+APOD(date = as.Date("2019-11-01"), hd = TRUE, return_text = TRUE)
+## Return info of technology which NASA is working on since 2016/01/01.
+data <- Techport(update_since = as.Date("2016-01-01"))
+```
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r cars}
+summary(cars)
+```
+
+You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
+
+You can also embed plots, for example:
+
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
+
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!

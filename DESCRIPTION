@@ -1,0 +1,26 @@
+Package: nasaR
+Type: Package
+Title: Interface to Various NASA APIs
+Version: 0.1.0
+Authors@R: person("Zhichao", "Liu", email = "zhichao.liu@columbia.edu",
+  role = c("aut", "cre"))
+Description: Provides useful functions to help access NASA data easily.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+  tidyr,
+  purrr,
+  jpeg,
+  httr,
+  lubridate,
+  png,
+  dplyr,
+  jsonlite,
+  stringr
+RoxygenNote: 6.1.1
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
