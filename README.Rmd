@@ -28,32 +28,21 @@ The goal of nasaR is to provide useful functions to help access NASA data easily
 devtools::install_github("Liu-Zhichao/nasaR")
 ```
 
-2. You can get your own NASA API token at: [NASA_API_TOKEN](https://api.nasa.gov/).
+2. You can get your own NASA API token at: [NASA_API](https://api.nasa.gov/). It is highly recommended that you place your private token in the R environment file, and name it "NASA_TOKEN". (the usethis::edit_r_environ() function will be useful). It could help your access to the data be much safer and faster.
 
-## Example
+## Examples
 
-This is a basic example which shows you how to solve a common problem:
+These are some basic examples which show you how to get access to the data you want:
 
 ```{r example}
 library(nasaR)
 ## Download an high-definition astronomy picture of 2019/11/01 and return its explanation text as well.
 APOD(date = as.Date("2019-11-01"), hd = TRUE, return_text = TRUE)
-## Return info of technology which NASA is working on since 2016/01/01.
-data <- Techport(update_since = as.Date("2016-01-01"))
+#################################
+## Return info of technology which NASA is working on since 2019/12/01.
+Techport(update_since = as.Date("2019-12-01"))
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+# Find Out More
 
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
+You can find lots of useful helper documents in nasaR package. If you don't know meaning of some specific functions, you could check [NASA API official website](https://api.nasa.gov/) for detailed information. I believe that you can find the solution there. If you find any questions or have some interesting new idea of the package, feel free to contact the [author](https://www.linkedin.com/in/zhichao-liu/) directly or leave an issue [here](https://github.com/Liu-Zhichao/nasaR/issues). Thank you!
