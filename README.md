@@ -13,7 +13,7 @@ data easily.
 ## Installation
 
 1.  You can install the released version of nasaR from
-    [nasaR](https://github.com/Liu-Zhichao/nasaR) with:
+    [github](https://github.com/Liu-Zhichao/nasaR) with:
 
 <!-- end list -->
 

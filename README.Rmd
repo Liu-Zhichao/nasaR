@@ -22,7 +22,7 @@ The goal of nasaR is to provide useful functions to help access NASA data easily
 
 ## Installation
 
-1. You can install the released version of nasaR from [nasaR](https://github.com/Liu-Zhichao/nasaR) with:
+1. You can install the released version of nasaR from [github](https://github.com/Liu-Zhichao/nasaR) with:
 
 ``` r
 devtools::install_github("Liu-Zhichao/nasaR")
