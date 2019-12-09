@@ -34,11 +34,13 @@ devtools::install_github("Liu-Zhichao/nasaR")
 
 These are some basic examples which show you how to get access to the data you want:
 
-```{r example}
+```{r example_1}
 library(nasaR)
 ## Download an high-definition astronomy picture of 2019/11/01 and return its explanation text as well.
 APOD(date = as.Date("2019-11-01"), hd = TRUE, return_text = TRUE)
-#################################
+```
+
+```{r example_2}
 ## Return info of technology which NASA is working on since 2019/12/01.
 Techport(update_since = as.Date("2019-12-01"))
 ```

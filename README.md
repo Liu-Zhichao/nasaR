@@ -39,175 +39,177 @@ library(nasaR)
 APOD(date = as.Date("2019-11-01"), hd = TRUE, return_text = TRUE)
 ```
 
-<img src="man/figures/README-example-1.png" width="100%" />
+<img src="man/figures/README-example_1-1.png" width="100%" />
 
     #> [1] "October 31, 1938 was the day after Martians encountered planet Earth, and everything was calm. Reports of the invasion were revealed to be part of a Halloween radio drama, the now famous broadcast based on H.G. Wells' scifi novel War of the Worlds. On Mars October 20, 2014 was calm too, the day after its close encounter with Comet Siding Spring (C/2013 A1). Not a hoax, this comet really did come within 86,700 miles or so of Mars, about 1/3 the Earth-Moon distance. Earth's spacecraft and rovers in Mars orbit and on the surface reported no ill effects though, and had a ringside seat as a visitor from the outer solar system passed by. Spanning over 2 degrees against stars of the constellation Ophiuchus, this colorful telescopic snapshot captures our view of Mars on the day after. Bluish star 51 Ophiuchi is at the upper right and the comet is just emerging from the Red Planet's bright glare."
-    #################################
-    ## Return info of technology which NASA is working on since 2019/12/01.
-    Techport(update_since = as.Date("2019-12-01"))
-    #> $projects
-    #> $projects$totalCount
-    #> [1] 20
-    #> 
-    #> $projects$projects
-    #> $projects$projects[[1]]
-    #> $projects$projects[[1]]$id
-    #> [1] 93127
-    #> 
-    #> $projects$projects[[1]]$lastUpdated
-    #> [1] "2019-12-6"
-    #> 
-    #> 
-    #> $projects$projects[[2]]
-    #> $projects$projects[[2]]$id
-    #> [1] 95917
-    #> 
-    #> $projects$projects[[2]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[3]]
-    #> $projects$projects[[3]]$id
-    #> [1] 95885
-    #> 
-    #> $projects$projects[[3]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[4]]
-    #> $projects$projects[[4]]$id
-    #> [1] 95884
-    #> 
-    #> $projects$projects[[4]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[5]]
-    #> $projects$projects[[5]]$id
-    #> [1] 95883
-    #> 
-    #> $projects$projects[[5]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[6]]
-    #> $projects$projects[[6]]$id
-    #> [1] 95882
-    #> 
-    #> $projects$projects[[6]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[7]]
-    #> $projects$projects[[7]]$id
-    #> [1] 95881
-    #> 
-    #> $projects$projects[[7]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[8]]
-    #> $projects$projects[[8]]$id
-    #> [1] 95880
-    #> 
-    #> $projects$projects[[8]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[9]]
-    #> $projects$projects[[9]]$id
-    #> [1] 95879
-    #> 
-    #> $projects$projects[[9]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[10]]
-    #> $projects$projects[[10]]$id
-    #> [1] 95878
-    #> 
-    #> $projects$projects[[10]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[11]]
-    #> $projects$projects[[11]]$id
-    #> [1] 95877
-    #> 
-    #> $projects$projects[[11]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[12]]
-    #> $projects$projects[[12]]$id
-    #> [1] 95876
-    #> 
-    #> $projects$projects[[12]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[13]]
-    #> $projects$projects[[13]]$id
-    #> [1] 95874
-    #> 
-    #> $projects$projects[[13]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[14]]
-    #> $projects$projects[[14]]$id
-    #> [1] 95872
-    #> 
-    #> $projects$projects[[14]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[15]]
-    #> $projects$projects[[15]]$id
-    #> [1] 95916
-    #> 
-    #> $projects$projects[[15]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[16]]
-    #> $projects$projects[[16]]$id
-    #> [1] 95913
-    #> 
-    #> $projects$projects[[16]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[17]]
-    #> $projects$projects[[17]]$id
-    #> [1] 95912
-    #> 
-    #> $projects$projects[[17]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[18]]
-    #> $projects$projects[[18]]$id
-    #> [1] 95909
-    #> 
-    #> $projects$projects[[18]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[19]]
-    #> $projects$projects[[19]]$id
-    #> [1] 95908
-    #> 
-    #> $projects$projects[[19]]$lastUpdated
-    #> [1] "2019-12-3"
-    #> 
-    #> 
-    #> $projects$projects[[20]]
-    #> $projects$projects[[20]]$id
-    #> [1] 95907
-    #> 
-    #> $projects$projects[[20]]$lastUpdated
-    #> [1] "2019-12-3"
+
+``` r
+## Return info of technology which NASA is working on since 2019/12/01.
+Techport(update_since = as.Date("2019-12-01"))
+#> $projects
+#> $projects$totalCount
+#> [1] 20
+#> 
+#> $projects$projects
+#> $projects$projects[[1]]
+#> $projects$projects[[1]]$id
+#> [1] 93127
+#> 
+#> $projects$projects[[1]]$lastUpdated
+#> [1] "2019-12-6"
+#> 
+#> 
+#> $projects$projects[[2]]
+#> $projects$projects[[2]]$id
+#> [1] 95917
+#> 
+#> $projects$projects[[2]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[3]]
+#> $projects$projects[[3]]$id
+#> [1] 95885
+#> 
+#> $projects$projects[[3]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[4]]
+#> $projects$projects[[4]]$id
+#> [1] 95884
+#> 
+#> $projects$projects[[4]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[5]]
+#> $projects$projects[[5]]$id
+#> [1] 95883
+#> 
+#> $projects$projects[[5]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[6]]
+#> $projects$projects[[6]]$id
+#> [1] 95882
+#> 
+#> $projects$projects[[6]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[7]]
+#> $projects$projects[[7]]$id
+#> [1] 95881
+#> 
+#> $projects$projects[[7]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[8]]
+#> $projects$projects[[8]]$id
+#> [1] 95880
+#> 
+#> $projects$projects[[8]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[9]]
+#> $projects$projects[[9]]$id
+#> [1] 95879
+#> 
+#> $projects$projects[[9]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[10]]
+#> $projects$projects[[10]]$id
+#> [1] 95878
+#> 
+#> $projects$projects[[10]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[11]]
+#> $projects$projects[[11]]$id
+#> [1] 95877
+#> 
+#> $projects$projects[[11]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[12]]
+#> $projects$projects[[12]]$id
+#> [1] 95876
+#> 
+#> $projects$projects[[12]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[13]]
+#> $projects$projects[[13]]$id
+#> [1] 95874
+#> 
+#> $projects$projects[[13]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[14]]
+#> $projects$projects[[14]]$id
+#> [1] 95872
+#> 
+#> $projects$projects[[14]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[15]]
+#> $projects$projects[[15]]$id
+#> [1] 95916
+#> 
+#> $projects$projects[[15]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[16]]
+#> $projects$projects[[16]]$id
+#> [1] 95913
+#> 
+#> $projects$projects[[16]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[17]]
+#> $projects$projects[[17]]$id
+#> [1] 95912
+#> 
+#> $projects$projects[[17]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[18]]
+#> $projects$projects[[18]]$id
+#> [1] 95909
+#> 
+#> $projects$projects[[18]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[19]]
+#> $projects$projects[[19]]$id
+#> [1] 95908
+#> 
+#> $projects$projects[[19]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[20]]
+#> $projects$projects[[20]]$id
+#> [1] 95907
+#> 
+#> $projects$projects[[20]]$lastUpdated
+#> [1] "2019-12-3"
+```
 
 # Find Out More
 
