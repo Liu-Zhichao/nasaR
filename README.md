@@ -211,7 +211,19 @@ Techport(update_since = as.Date("2019-12-01"))
 #> [1] "2019-12-3"
 ```
 
-# Find Out More
+## Announcement
+
+R CRAN has an official NASA API interface package called
+[nasadata](https://cran.r-project.org/web/packages/nasadata/nasadata.pdf).
+However, the version is quite old and has no longer been updated since
+2016, and the functions in this package only take the Earth into
+consideration, info about other planets/objects in the space are not
+included in the package. So I decide to make an update(includes all the
+contents nasadata has and more) and build up various functions for
+acquiring NASA data easily from available APIs as complete as possible.
+Find more info about changes/updates in the vignette file.
+
+## Find Out More
 
 You can find lots of useful helper documents in nasaR package. If you
 don’t know meaning of some specific functions, you could check [NASA API
