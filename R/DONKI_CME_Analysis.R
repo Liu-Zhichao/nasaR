@@ -15,7 +15,8 @@
 #' @examples
 #' DONKI_CME_Analysis(start_date = as.Date("2016-09-01"), end_date = as.Date("2016-09-30"), speed = 500, halfAngle = 30)
 #' @export
-DONKI_CME_Analysis <- function(key = Sys.getenv("NASA_TOKEN"), start_date = end_date - 30, end_date = lubridate::today(tzone = "UTC"), mostAccurateOnly = TRUE, completeEntryOnly = TRUE, speed = 0, halfAngle = 0, catalog = "ALL", keyword = "NONE"){
+DONKI_CME_Analysis <- function(key = Sys.getenv("NASA_TOKEN"), start_date = end_date - 30, end_date = lubridate::today(tzone = "UTC"), mostAccurateOnly = TRUE,
+                               completeEntryOnly = TRUE, speed = 0, halfAngle = 0, catalog = "ALL", keyword = "NONE"){
   library(tidyr)
   library(httr)
   response <- "https://api.nasa.gov/DONKI/CMEAnalysis?" %>%

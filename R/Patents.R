@@ -10,6 +10,7 @@
 #' @param query String. Search text to filter results.
 #' @param concept_tags Boolean. Return an ordered dictionary of concepts from the patent abstract. FALSE as default.
 #' @param limit Integer. number of patents to return. 5 as default.
+#' @return Data of NASA's patents.
 #' @examples
 #' Patents(query = "temperature")
 #' @export

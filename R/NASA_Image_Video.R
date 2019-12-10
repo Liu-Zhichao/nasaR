@@ -26,7 +26,9 @@
 #' NASA_Image_Video(endpoint = "metadata", nasa_id = "as11-40-5874")
 #' NASA_Image_Video(endpoint = "captions", nasa_id = "172_ISS-Slosh")
 #' @export
-NASA_Image_Video <- function(endpoint, nasa_id = NULL, q = NULL, center = NULL, description = NULL, description_508 = NULL, keywords = NULL, location = NULL, media_type = NULL, page = NULL, photographer = NULL, secondary_creator = NULL, title = NULL, year_start = NULL, year_end = NULL){
+NASA_Image_Video <- function(endpoint, nasa_id = NULL, q = NULL, center = NULL, description = NULL, description_508 = NULL,
+                             keywords = NULL, location = NULL, media_type = NULL, page = NULL, photographer = NULL,
+                             secondary_creator = NULL, title = NULL, year_start = NULL, year_end = NULL){
   library(tidyr)
   library(httr)
   if (endpoint == "asset" | endpoint == "metadata" | endpoint == "captions"){
