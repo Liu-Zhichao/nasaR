@@ -19,6 +19,10 @@ data easily.
 
 ``` r
 devtools::install_github("Liu-Zhichao/nasaR")
+# If you want to read the vignettes of the package by:
+browseVignettes("nasaR")
+# Then you should use option "build_vignettes = TRUE":
+devtools::install_github("Liu-Zhichao/nasaR", build_vignettes = TRUE)
 ```
 
 2.  You can get your own NASA API token at:
@@ -35,41 +39,41 @@ data you want:
 
 ``` r
 library(nasaR)
-## Download an high-definition astronomy picture of 2019/11/01 and return its explanation text as well.
-APOD(date = as.Date("2019-11-01"), hd = TRUE, return_text = TRUE)
+## Download an high-definition astronomy picture of 2019/12/01 and return its explanation text as well.
+APOD(date = as.Date("2019-12-01"), hd = TRUE, return_text = TRUE)
 ```
 
 <img src="man/figures/README-example_1-1.png" width="100%" />
 
-    #> [1] "October 31, 1938 was the day after Martians encountered planet Earth, and everything was calm. Reports of the invasion were revealed to be part of a Halloween radio drama, the now famous broadcast based on H.G. Wells' scifi novel War of the Worlds. On Mars October 20, 2014 was calm too, the day after its close encounter with Comet Siding Spring (C/2013 A1). Not a hoax, this comet really did come within 86,700 miles or so of Mars, about 1/3 the Earth-Moon distance. Earth's spacecraft and rovers in Mars orbit and on the surface reported no ill effects though, and had a ringside seat as a visitor from the outer solar system passed by. Spanning over 2 degrees against stars of the constellation Ophiuchus, this colorful telescopic snapshot captures our view of Mars on the day after. Bluish star 51 Ophiuchi is at the upper right and the comet is just emerging from the Red Planet's bright glare."
+    #> [1] "Why does this galaxy have a ring of bright blue stars?  Beautiful island universe Messier 94 lies a mere 15 million light-years distant in the northern constellation of the Hunting Dogs (Canes Venatici). A popular target for Earth-based astronomers, the face-on spiral galaxy is about 30,000 light-years across, with spiral arms sweeping through the outskirts of its broad disk. But this Hubble Space Telescope field of view spans about 7,000 light-years across M94's central region. The featured close-up highlights the galaxy's compact, bright nucleus, prominent inner dust lanes, and the remarkable bluish ring of young massive stars. The ring stars are all likely less than 10 million years old, indicating that M94 is a starburst galaxy that is experiencing an epoch of rapid star formation from inspiraling gas. The circular ripple of blue stars is likely a wave propagating outward, having been triggered by the gravity and rotation of a oval matter distributions. Because M94 is relatively nearby, astronomers can better explore details of its starburst ring.    Astrophysicists: Browse 2,000+ codes in the Astrophysics Source Code Library"
 
 ``` r
 ## Return info of technology which NASA is working on since 2019/12/01.
 Techport(update_since = as.Date("2019-12-01"))
 #> $projects
 #> $projects$totalCount
-#> [1] 20
+#> [1] 21
 #> 
 #> $projects$projects
 #> $projects$projects[[1]]
 #> $projects$projects[[1]]$id
-#> [1] 93127
+#> [1] 95074
 #> 
 #> $projects$projects[[1]]$lastUpdated
-#> [1] "2019-12-6"
+#> [1] "2019-12-9"
 #> 
 #> 
 #> $projects$projects[[2]]
 #> $projects$projects[[2]]$id
-#> [1] 95917
+#> [1] 93127
 #> 
 #> $projects$projects[[2]]$lastUpdated
-#> [1] "2019-12-3"
+#> [1] "2019-12-6"
 #> 
 #> 
 #> $projects$projects[[3]]
 #> $projects$projects[[3]]$id
-#> [1] 95885
+#> [1] 95917
 #> 
 #> $projects$projects[[3]]$lastUpdated
 #> [1] "2019-12-3"
@@ -77,7 +81,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[4]]
 #> $projects$projects[[4]]$id
-#> [1] 95884
+#> [1] 95885
 #> 
 #> $projects$projects[[4]]$lastUpdated
 #> [1] "2019-12-3"
@@ -85,7 +89,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[5]]
 #> $projects$projects[[5]]$id
-#> [1] 95883
+#> [1] 95884
 #> 
 #> $projects$projects[[5]]$lastUpdated
 #> [1] "2019-12-3"
@@ -93,7 +97,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[6]]
 #> $projects$projects[[6]]$id
-#> [1] 95882
+#> [1] 95883
 #> 
 #> $projects$projects[[6]]$lastUpdated
 #> [1] "2019-12-3"
@@ -101,7 +105,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[7]]
 #> $projects$projects[[7]]$id
-#> [1] 95881
+#> [1] 95882
 #> 
 #> $projects$projects[[7]]$lastUpdated
 #> [1] "2019-12-3"
@@ -109,7 +113,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[8]]
 #> $projects$projects[[8]]$id
-#> [1] 95880
+#> [1] 95881
 #> 
 #> $projects$projects[[8]]$lastUpdated
 #> [1] "2019-12-3"
@@ -117,7 +121,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[9]]
 #> $projects$projects[[9]]$id
-#> [1] 95879
+#> [1] 95880
 #> 
 #> $projects$projects[[9]]$lastUpdated
 #> [1] "2019-12-3"
@@ -125,7 +129,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[10]]
 #> $projects$projects[[10]]$id
-#> [1] 95878
+#> [1] 95879
 #> 
 #> $projects$projects[[10]]$lastUpdated
 #> [1] "2019-12-3"
@@ -133,7 +137,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[11]]
 #> $projects$projects[[11]]$id
-#> [1] 95877
+#> [1] 95878
 #> 
 #> $projects$projects[[11]]$lastUpdated
 #> [1] "2019-12-3"
@@ -141,7 +145,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[12]]
 #> $projects$projects[[12]]$id
-#> [1] 95876
+#> [1] 95877
 #> 
 #> $projects$projects[[12]]$lastUpdated
 #> [1] "2019-12-3"
@@ -149,7 +153,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[13]]
 #> $projects$projects[[13]]$id
-#> [1] 95874
+#> [1] 95876
 #> 
 #> $projects$projects[[13]]$lastUpdated
 #> [1] "2019-12-3"
@@ -157,7 +161,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[14]]
 #> $projects$projects[[14]]$id
-#> [1] 95872
+#> [1] 95874
 #> 
 #> $projects$projects[[14]]$lastUpdated
 #> [1] "2019-12-3"
@@ -165,7 +169,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[15]]
 #> $projects$projects[[15]]$id
-#> [1] 95916
+#> [1] 95872
 #> 
 #> $projects$projects[[15]]$lastUpdated
 #> [1] "2019-12-3"
@@ -173,7 +177,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[16]]
 #> $projects$projects[[16]]$id
-#> [1] 95913
+#> [1] 95916
 #> 
 #> $projects$projects[[16]]$lastUpdated
 #> [1] "2019-12-3"
@@ -181,7 +185,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[17]]
 #> $projects$projects[[17]]$id
-#> [1] 95912
+#> [1] 95913
 #> 
 #> $projects$projects[[17]]$lastUpdated
 #> [1] "2019-12-3"
@@ -189,7 +193,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[18]]
 #> $projects$projects[[18]]$id
-#> [1] 95909
+#> [1] 95912
 #> 
 #> $projects$projects[[18]]$lastUpdated
 #> [1] "2019-12-3"
@@ -197,7 +201,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[19]]
 #> $projects$projects[[19]]$id
-#> [1] 95908
+#> [1] 95909
 #> 
 #> $projects$projects[[19]]$lastUpdated
 #> [1] "2019-12-3"
@@ -205,9 +209,17 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[20]]
 #> $projects$projects[[20]]$id
-#> [1] 95907
+#> [1] 95908
 #> 
 #> $projects$projects[[20]]$lastUpdated
+#> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[21]]
+#> $projects$projects[[21]]$id
+#> [1] 95907
+#> 
+#> $projects$projects[[21]]$lastUpdated
 #> [1] "2019-12-3"
 ```
 

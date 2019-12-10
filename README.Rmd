@@ -26,6 +26,10 @@ The goal of nasaR is to provide useful functions to help access NASA data easily
 
 ``` r
 devtools::install_github("Liu-Zhichao/nasaR")
+# If you want to read the vignettes of the package by:
+browseVignettes("nasaR")
+# Then you should use option "build_vignettes = TRUE":
+devtools::install_github("Liu-Zhichao/nasaR", build_vignettes = TRUE)
 ```
 
 2. You can get your own NASA API token at: [NASA_API](https://api.nasa.gov/). It is highly recommended that you place your private token in the R environment file, and name it "NASA_TOKEN". (the usethis::edit_r_environ() function will be useful). It could help your access to the data be much safer and faster.
@@ -36,8 +40,8 @@ These are some basic examples which show you how to get access to the data you w
 
 ```{r example_1}
 library(nasaR)
-## Download an high-definition astronomy picture of 2019/11/01 and return its explanation text as well.
-APOD(date = as.Date("2019-11-01"), hd = TRUE, return_text = TRUE)
+## Download an high-definition astronomy picture of 2019/12/01 and return its explanation text as well.
+APOD(date = as.Date("2019-12-01"), hd = TRUE, return_text = TRUE)
 ```
 
 ```{r example_2}
