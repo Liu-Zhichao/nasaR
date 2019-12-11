@@ -16,6 +16,9 @@ Patents(key = Sys.getenv("NASA_TOKEN"), query, concept_tags = FALSE,
 
 \item{limit}{Integer. number of patents to return. 5 as default.}
 }
+\value{
+Data of NASA's patents.
+}
 \description{
 NOTE: THIS IS DOWN CURRENTLY: The NASA patent portfolio is available to benefit US citizens.
 Through partnerships and licensing agreements with industry, these patents ensure that NASA’s

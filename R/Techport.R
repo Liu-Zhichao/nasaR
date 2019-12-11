@@ -12,6 +12,8 @@
 #' Techport(id_parameter = 17792)
 #' Techport(all_valid_id = TRUE)
 #' Techport(update_since = as.Date("2016-01-01"))
+#' @import tidyr
+#' @import httr
 #' @export
 Techport <- function(key = Sys.getenv("NASA_TOKEN"), id_parameter = NULL, all_valid_id = FALSE, update_since = NULL){
   library(tidyr)

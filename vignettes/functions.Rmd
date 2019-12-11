@@ -183,7 +183,7 @@ DONKI_WSAEnlilSimulation <- function(key = Sys.getenv("NASA_TOKEN"), start_date 
 DONKI_WSAEnlilSimulation(start_date = as.Date("2019-10-01"), end_date = as.Date("2019-10-15"))
 ```
 
-## Earth_Assets
+## Earth_Assets (This function is similar to "earth_asset" in nasadata package.)
 ### Description
 This function retrieves retrieves the date-times and asset names for available imagery for a supplied location.
 
@@ -195,7 +195,7 @@ Earth_Assets <- function(key = Sys.getenv("NASA_TOKEN"), lat, lon, begin_date, e
 Earth_Assets(lon = 100.75, lat = 1.5, begin_date = as.Date("2014-02-01"))
 ```
 
-## Earth_Imagery
+## Earth_Imagery (This function is similar to "earth_image" + "plot_earth_image" in nasadata package.)
 ### Description
 This function retrieves the Landsat 8 image for the supplied location and date.
 
@@ -207,7 +207,7 @@ Earth_Imagery <- function(key = Sys.getenv("NASA_TOKEN"), lat, lon, dim = 0.025,
 Earth_Imagery(lon = 100.75, lat = 1.5, date = as.Date("2014-02-01"), cloud_score = TRUE)
 ```
 
-## EONET_Events
+## EONET_Events (This function is similar to "earth_event", "eonet_categories", and "eonet_sources" in nasadata package.)
 ### Description
 This function helps get access to the information of events on the Earth (filtered by events/categories/layers).
 

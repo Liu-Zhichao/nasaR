@@ -39,7 +39,7 @@ data you want:
 
 ``` r
 library(nasaR)
-## Download an high-definition astronomy picture of 2019/12/01 and return its explanation text as well.
+## Download an HD astronomy picture of 2019/12/01 and return its explanation text as well.
 APOD(date = as.Date("2019-12-01"), hd = TRUE, return_text = TRUE)
 ```
 
@@ -226,14 +226,17 @@ Techport(update_since = as.Date("2019-12-01"))
 ## Announcement
 
 R CRAN has an official NASA API interface package called
-[nasadata](https://cran.r-project.org/web/packages/nasadata/nasadata.pdf).
+[nasadata](https://cran.r-project.org/web/packages/nasadata/index.html).
 However, the version is quite old and has no longer been updated since
 2016, and the functions in this package only take the Earth into
 consideration, info about other planets/objects in the space are not
 included in the package. So I decide to make an update(includes all the
 contents nasadata has and more) and build up various functions for
 acquiring NASA data easily from available APIs as complete as possible.
-Find more info about changes/updates in the vignette file.
+Although a few functions seems to be similar in two
+packages(e.g. Earth\_Assets in nasaR v.s. earth\_assets in nasadata), I
+wrote all the functions myself without any references. Find more info
+about similarities/updates in the vignette file.
 
 ## Find Out More
 
