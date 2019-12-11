@@ -23,7 +23,7 @@ library(nasaR)
 
 # Functions
 The followings show the usage and examples of all functions (sorted alphabetically) included in the package. For detailed meaning of each parameter, please check the helper file of each funtion by running "?[function name]" in the console.  
-Tips: All examples are valid only when you place NASA token in R.evironment and name it "NASA_TOKEN" (by default).
+Tips: All examples are valid only when you place NASA token in R.evironment and name it "NASA_TOKEN" (by default), otherwise you need check the helper file carefully and enter your private key in the function every time.
 
 ## APOD
 ### Description
@@ -236,6 +236,23 @@ EPIC <- function(key = Sys.getenv("NASA_TOKEN"), query_by_date, date = Sys.Date(
 EPIC(query_by_date = "natural")
 EPIC(query_by_date = "enhanced/date", date = as.Date("2019-11-01"))
 EPIC(query_by_date = "natural/date", date = as.Date("2019-06-01"), download = TRUE)
+```
+
+## Exoplanet
+### Description
+This function allows programatic access to NASA's Exoplanet Archive database. See detailed info at: https://exoplanetarchive.ipac.caltech.edu/docs/program_interfaces.html#data.
+
+### Parameters
+Exoplanet <- function(table = "exoplanets", select = NULL, count = NULL, colset = NULL, where = NULL,
+                      order = NULL, ra = NULL, dec = NULL, radius = NULL, aliastable = NULL)
+
+### Examples
+```{r, eval=FALSE}
+Exoplanet()
+Exoplanet(select = "pl_hostname", order = "dec")
+Exoplanet(ra = 291, dec = 48, radius = "1 degree")
+Exoplanet(table = "cumulative", where = c("koi_prad<2", "koi_teq>180", "koi_teq<303", "koi_disposition like 'CANDIDATE'"))
+Exoplanet(aliastable = "bet Pic")
 ```
 
 ## Fireball
