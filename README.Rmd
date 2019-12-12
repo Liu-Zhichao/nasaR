@@ -49,6 +49,12 @@ APOD(date = as.Date("2019-12-01"), hd = TRUE, return_text = TRUE)
 Techport(update_since = as.Date("2019-12-01"))
 ```
 
+```{r example_3}
+## Return the most recent info about weather on Mars.
+Insight(simplified_data_frame = TRUE)
+```
+
+
 ## Announcement
 R CRAN has an official NASA API interface package called [nasadata](https://cran.r-project.org/web/packages/nasadata/index.html). However, the version is quite old and has no longer been updated since 2016, and the functions in this package only take the Earth into consideration, info about other planets/objects in the space are not included in the package. So I decide to make an update(includes all the contents nasadata has and more) and build up various functions for acquiring NASA data easily from available APIs as complete as possible. Although a few functions seems to be similar in two packages(e.g. Earth_Assets in nasaR v.s. earth_assets in nasadata), I wrote all the functions myself without any references. Find more info about similarities/updates in the vignette file.
 

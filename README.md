@@ -52,36 +52,36 @@ APOD(date = as.Date("2019-12-01"), hd = TRUE, return_text = TRUE)
 Techport(update_since = as.Date("2019-12-01"))
 #> $projects
 #> $projects$totalCount
-#> [1] 21
+#> [1] 22
 #> 
 #> $projects$projects
 #> $projects$projects[[1]]
 #> $projects$projects[[1]]$id
-#> [1] 95074
+#> [1] 95973
 #> 
 #> $projects$projects[[1]]$lastUpdated
-#> [1] "2019-12-9"
+#> [1] "2019-12-10"
 #> 
 #> 
 #> $projects$projects[[2]]
 #> $projects$projects[[2]]$id
-#> [1] 93127
+#> [1] 95074
 #> 
 #> $projects$projects[[2]]$lastUpdated
-#> [1] "2019-12-6"
+#> [1] "2019-12-9"
 #> 
 #> 
 #> $projects$projects[[3]]
 #> $projects$projects[[3]]$id
-#> [1] 95917
+#> [1] 93127
 #> 
 #> $projects$projects[[3]]$lastUpdated
-#> [1] "2019-12-3"
+#> [1] "2019-12-6"
 #> 
 #> 
 #> $projects$projects[[4]]
 #> $projects$projects[[4]]$id
-#> [1] 95885
+#> [1] 95917
 #> 
 #> $projects$projects[[4]]$lastUpdated
 #> [1] "2019-12-3"
@@ -89,7 +89,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[5]]
 #> $projects$projects[[5]]$id
-#> [1] 95884
+#> [1] 95885
 #> 
 #> $projects$projects[[5]]$lastUpdated
 #> [1] "2019-12-3"
@@ -97,7 +97,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[6]]
 #> $projects$projects[[6]]$id
-#> [1] 95883
+#> [1] 95884
 #> 
 #> $projects$projects[[6]]$lastUpdated
 #> [1] "2019-12-3"
@@ -105,7 +105,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[7]]
 #> $projects$projects[[7]]$id
-#> [1] 95882
+#> [1] 95883
 #> 
 #> $projects$projects[[7]]$lastUpdated
 #> [1] "2019-12-3"
@@ -113,7 +113,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[8]]
 #> $projects$projects[[8]]$id
-#> [1] 95881
+#> [1] 95882
 #> 
 #> $projects$projects[[8]]$lastUpdated
 #> [1] "2019-12-3"
@@ -121,7 +121,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[9]]
 #> $projects$projects[[9]]$id
-#> [1] 95880
+#> [1] 95881
 #> 
 #> $projects$projects[[9]]$lastUpdated
 #> [1] "2019-12-3"
@@ -129,7 +129,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[10]]
 #> $projects$projects[[10]]$id
-#> [1] 95879
+#> [1] 95880
 #> 
 #> $projects$projects[[10]]$lastUpdated
 #> [1] "2019-12-3"
@@ -137,7 +137,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[11]]
 #> $projects$projects[[11]]$id
-#> [1] 95878
+#> [1] 95879
 #> 
 #> $projects$projects[[11]]$lastUpdated
 #> [1] "2019-12-3"
@@ -145,7 +145,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[12]]
 #> $projects$projects[[12]]$id
-#> [1] 95877
+#> [1] 95878
 #> 
 #> $projects$projects[[12]]$lastUpdated
 #> [1] "2019-12-3"
@@ -153,7 +153,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[13]]
 #> $projects$projects[[13]]$id
-#> [1] 95876
+#> [1] 95877
 #> 
 #> $projects$projects[[13]]$lastUpdated
 #> [1] "2019-12-3"
@@ -161,7 +161,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[14]]
 #> $projects$projects[[14]]$id
-#> [1] 95874
+#> [1] 95876
 #> 
 #> $projects$projects[[14]]$lastUpdated
 #> [1] "2019-12-3"
@@ -169,7 +169,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[15]]
 #> $projects$projects[[15]]$id
-#> [1] 95872
+#> [1] 95874
 #> 
 #> $projects$projects[[15]]$lastUpdated
 #> [1] "2019-12-3"
@@ -177,7 +177,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[16]]
 #> $projects$projects[[16]]$id
-#> [1] 95916
+#> [1] 95872
 #> 
 #> $projects$projects[[16]]$lastUpdated
 #> [1] "2019-12-3"
@@ -185,7 +185,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[17]]
 #> $projects$projects[[17]]$id
-#> [1] 95913
+#> [1] 95916
 #> 
 #> $projects$projects[[17]]$lastUpdated
 #> [1] "2019-12-3"
@@ -193,7 +193,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[18]]
 #> $projects$projects[[18]]$id
-#> [1] 95912
+#> [1] 95913
 #> 
 #> $projects$projects[[18]]$lastUpdated
 #> [1] "2019-12-3"
@@ -201,7 +201,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[19]]
 #> $projects$projects[[19]]$id
-#> [1] 95909
+#> [1] 95912
 #> 
 #> $projects$projects[[19]]$lastUpdated
 #> [1] "2019-12-3"
@@ -209,7 +209,7 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[20]]
 #> $projects$projects[[20]]$id
-#> [1] 95908
+#> [1] 95909
 #> 
 #> $projects$projects[[20]]$lastUpdated
 #> [1] "2019-12-3"
@@ -217,10 +217,31 @@ Techport(update_since = as.Date("2019-12-01"))
 #> 
 #> $projects$projects[[21]]
 #> $projects$projects[[21]]$id
-#> [1] 95907
+#> [1] 95908
 #> 
 #> $projects$projects[[21]]$lastUpdated
 #> [1] "2019-12-3"
+#> 
+#> 
+#> $projects$projects[[22]]
+#> $projects$projects[[22]]$id
+#> [1] 95907
+#> 
+#> $projects$projects[[22]]$lastUpdated
+#> [1] "2019-12-3"
+```
+
+``` r
+## Return the most recent info about weather on Mars.
+Insight(simplified_data_frame = TRUE)
+#>                    First_UTC             Last_UTC    High      Low
+#> Sol 362 2019-12-03T04:01:27Z 2019-12-04T04:41:02Z -21.174  -98.548
+#> Sol 363 2019-12-04T04:41:02Z 2019-12-05T05:20:37Z -21.075  -99.804
+#> Sol 364 2019-12-05T05:20:37Z 2019-12-06T06:00:12Z -20.347  -99.893
+#> Sol 365 2019-12-06T06:00:13Z 2019-12-07T06:39:47Z -21.531    -98.8
+#> Sol 366 2019-12-07T06:39:48Z 2019-12-08T00:34:43Z -20.442  -98.941
+#> Sol 367 2019-12-08T09:18:29Z 2019-12-09T07:58:59Z -20.914 -139.936
+#> Sol 368 2019-12-09T07:58:59Z 2019-12-10T08:38:35Z -20.919 -100.049
 ```
 
 ## Announcement
